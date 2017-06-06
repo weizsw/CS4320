@@ -1,0 +1,11 @@
+ * Serving static routes
+Traceback (most recent call last):
+  File "/usr/local/bin/ghdata", line 11, in <module>
+    load_entry_point('ghdata==0.2.2', 'console_scripts', 'ghdata')()
+  File "/usr/local/lib/python3.5/dist-packages/ghdata/server.py", line 435, in run
+    app.run(host=host, port=int(port), debug=DEBUG)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 841, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/serving.py", line 717, in run_simple
+    s.bind((hostname, port))
+OSError: [Errno 98] Address already in use
